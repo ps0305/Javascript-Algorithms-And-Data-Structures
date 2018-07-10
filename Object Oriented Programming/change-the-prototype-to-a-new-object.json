@@ -1,0 +1,1 @@
+{"index.js":"function Dog(name) {\n  this.name = name; \n}\n\nDog.prototype = {\n  // Add your code below this line\n  numLegs :4,\n  eat: function(){\n    console.log('wush wush')\n  },\n  describe: function(){\n    console.log('Dog name is :' + this.name);\n  }\n  };"}
