@@ -1,0 +1,1 @@
+{"index.js":"let dog = {\n  name: \"Spot\",\n  numLegs: 4,\n  sayLegs: function() {return \"This dog has \" + this.numLegs + \" legs.\";}\n};\n\ndog.sayLegs();"}
