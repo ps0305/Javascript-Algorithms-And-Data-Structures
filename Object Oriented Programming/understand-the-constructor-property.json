@@ -1,0 +1,1 @@
+{"index.js":"function Dog(name) {\n  this.name = name;\n}\n\n// Add your code below this line\nfunction joinDogFraternity(candidate) {\n  if(candidate.constructor === Dog){\n    return true;\n  }else{\n    return false;\n  }\n}\n"}
