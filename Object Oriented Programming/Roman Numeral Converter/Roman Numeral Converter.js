@@ -25,6 +25,18 @@ var convertToRoman = function(num) {
 
 // test here
 convertToRoman(36);
+/*
+Code Explanation:
+
+==> We start off by creating two arrays with default conversion with matching indices. 
+    These are called decimalValue and romanNumeral. 
+    We also create an empty string variable, romanized, which will house the final roman number.
+
+==> Using a for loop, we loop through the indicies of the decimalValue array. 
+    We continue to loop until while the value at the current index will fit into num.
+
+==> Next, we add the roman numeral and decrease num by the decimal equivalent.
+==> Finally, we return the value of romanized.*/
 
 
 //Intermediate Code Solution:
@@ -77,3 +89,10 @@ function convertToRoman(num) {
 
 // test here
 convertToRoman(97);
+
+/*Code Explanation:
+=>Create an array of Roman Numerals (romans).
+=>Use a for loop to create an array of the digits (ints) in the number.
+=>Loop through the array of digits (base 10) and as you do, increment the Roman Numeral (base 5) index by 2 (numeral = romans[i*2]).
+=>Within the loop, use Switch Case to push the proper Roman Numerals (backwards) onto that array.
+=>Reverse the Roman Numerals array and turn it into a string.*/
