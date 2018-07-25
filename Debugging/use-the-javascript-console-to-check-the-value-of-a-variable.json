@@ -1,0 +1,1 @@
+{"index.js":"let a = 5;\nlet b = 1;\na++;\n// Add your code below this line\nconsole.log(a);\n\nlet sumAB = a + b;\nconsole.log(sumAB);"}
