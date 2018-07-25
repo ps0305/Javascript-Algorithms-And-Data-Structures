@@ -1,0 +1,1 @@
+{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x === y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}
