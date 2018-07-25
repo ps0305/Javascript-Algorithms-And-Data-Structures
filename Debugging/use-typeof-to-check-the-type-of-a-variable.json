@@ -1,0 +1,1 @@
+{"index.js":"let seven = 7;\nlet three = \"3\";\nconsole.log(seven + three);\n// Add your code below this line\nconsole.log(typeof(seven));\nconsole.log(typeof(three));"}
