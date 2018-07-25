@@ -1,0 +1,1 @@
+{"index.js":"let myArray = [1, 2, 3];\nlet arraySum = myArray.reduce((previous, current) =>  previous + current);\nconsole.log(`Sum of array values is: ${arraySum}`);"}
