@@ -1,0 +1,1 @@
+{"index.js":"function countToFive() {\n  let firstFive = \"12345\";\n  let len = firstFive.length;\n  // Fix the line below\n  for (let i = 0; i < len; i++) {\n  // Do not alter code below this line\n    console.log(firstFive[i]);\n  }\n}\n\ncountToFive();"}
