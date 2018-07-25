@@ -1,0 +1,1 @@
+{"index.js":"function getNine() {\n  let x = 6;\n  let y = 3;\n  return x + y;\n}\n\nlet result = getNine();\nconsole.log(result);"}
