@@ -1,0 +1,1 @@
+{"index.js":"let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n// do not change code above this line\n\nfunction checkInventory(scannedItem) {\n  // change code below this line\n  return foods[scannedItem];\n}\n\n// change code below this line to test different cases:\nconsole.log(checkInventory(\"apples\"));"}
