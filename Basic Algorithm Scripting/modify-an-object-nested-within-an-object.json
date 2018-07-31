@@ -1,0 +1,1 @@
+{"index.js":"let userActivity = {\n  id: 23894201352,\n  date: 'January 1, 2017',\n  data: {\n    totalUsers: 51,\n    online: 42\n  }\n};\n\n// change code below this line\nuserActivity.data.online =45; \n// change code above this line\n\nconsole.log(userActivity);"}
