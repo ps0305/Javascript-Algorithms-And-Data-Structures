@@ -1,0 +1,1 @@
+{"index.js":"let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n\n// change code below this line\ndelete foods.oranges;\ndelete foods.plums;\ndelete foods.strawberries;\n// change code above this line\n\nconsole.log(foods);"}
