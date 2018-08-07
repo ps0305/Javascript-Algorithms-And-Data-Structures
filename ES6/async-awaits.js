@@ -1,5 +1,6 @@
+//Generators
 function* generateNumbers(x) {
-  let y = yield x * 2;
+  let y = yield x * 2;        //yields ,makes temporary exit from the function
   let z = y * 3;
   return z;
 }
@@ -10,7 +11,7 @@ function* generateNumbers(x) {
   yield 3;
   yield 4;
 }
-
+//adding promises to generators
 function step1() {
   return new Promise((resolve, reject) => {
     console.log(1);
@@ -47,12 +48,13 @@ function* doWork() {
   step4();
 }
 
-var it = doWork();
+/*var it = doWork();
 it.next().value.then(function() {
   it.next().value.then(function() {
     it.next();
   });
-});
+});*/
+//to resolve above manual task,async-awaits used below
 
 async function doWork() {
   await step1();
