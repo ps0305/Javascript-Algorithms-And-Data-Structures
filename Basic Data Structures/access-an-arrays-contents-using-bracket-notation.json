@@ -1,0 +1,1 @@
+{"index.js":"let myArray = [\"a\", \"b\", \"c\", \"d\"];\n// change code below this line\nmyArray[1] = 'Changed'\n//change code above this line\nconsole.log(myArray);"}
