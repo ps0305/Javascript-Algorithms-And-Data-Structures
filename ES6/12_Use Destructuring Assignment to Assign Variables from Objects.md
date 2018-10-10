@@ -22,6 +22,10 @@ You may read it as "get the field x and copy the value into a," and so on.
 
 Use destructuring to obtain the length of the input string str, and assign the length to len in line.
 ```js
+
+EX-1
+----
+
 function getLength(str) {
   "use strict";
 
@@ -34,3 +38,21 @@ function getLength(str) {
 }
 
 console.log(getLength('FreeCodeCamp'));
+
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+//EX-2
+-------
+
+function getTempOfTmrw(avgTemperatures) {
+  "use strict";
+  // change code below this line
+  const { tomorrow : tempOfTomorrow }= AVG_TEMPERATURES; // change this line
+  // change code above this line
+  return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
