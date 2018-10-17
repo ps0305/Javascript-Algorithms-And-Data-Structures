@@ -1,6 +1,6 @@
-/*ES6 adds some nice support for easily defining object literals.
+//ES6 adds some nice support for easily defining object literals.
 
-Consider the following code:
+//Consider the following code:
 
 const getMousePosition = (x, y) => ({
   x: x,
