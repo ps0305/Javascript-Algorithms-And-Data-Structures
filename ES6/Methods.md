@@ -40,3 +40,25 @@ const car = ['MARUTI', 'HONDA', `SUZUKI`];
 const findCar = car.includes('HONDA');
 console.log(findCar);
 //true
+```
+### Some() method
+The `some()` method checks if some elements exists in an array, and returns `true` or `false`. This is somewhat similar to the concept of the `includes()` method, **except** the argument is a function and `not a string`.
+
+#### Example
+```js
+const age = [16,14,18]
+age.some(function(person) {
+  return preson >= 18;
+});
+//output: true
+```
+
+### Every() method
+The `every()` method loops through the `array`, checks every item, and returns `true` or `false`. Same concept as `some()`. **Except** `every item` must `satisfy` the conditional statement, otherwise, it will return `false`.
+
+#### Example
+```js
+const age = [15,20,19];
+age.every((person) => person >= 18);
+//false
+```
