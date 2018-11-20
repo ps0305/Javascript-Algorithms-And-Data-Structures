@@ -83,3 +83,12 @@ const productPrice = [100,200,300,400];
 productPrice.map((item) => item*0.75);
 // [75, 150, 225, 300]
 ```
+
+### Reduce() method
+The `reduce()` method can be used to transform an array into something else, which could be an integer, an object, a chain of promises ( sequential execution of promises) etc. For practical reasons, a simple use case would be to sum a list of integers. In short, it `“reduces”` the whole array into `one value`.
+
+#### Example
+```js
+const expenses = [200,900,4500,120,456,354,781];
+expenses.reduce((first, last) => first + last);
+//7311
