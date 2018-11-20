@@ -62,3 +62,24 @@ const age = [15,20,19];
 age.every((person) => person >= 18);
 //false
 ```
+
+### Filter() method
+The `filter()` method creates a new array with all elements that pass the test.
+
+#### Example
+Let’s say you want to return only prices that are above or equal to 25. Filter out all those other prices.
+```js
+const prices = [25,30,55,15,40,10,12];
+prices.filter((price) => price >= 25);
+//[30,55,40]
+```
+
+### Map() method
+The `map()` method is similar to the `filter()` method in terms of returning a new array. However, the only difference is that it is used to modify items.
+
+#### Example
+```js
+const productPrice = [100,200,300,400];
+productPrice.map((item) => item*0.75);
+// [75, 150, 225, 300]
+```
