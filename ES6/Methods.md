@@ -31,7 +31,7 @@ console.log(language) }
 //Go
 ```
 
-### Includes Methods
+### Includes() method
 The `includes()` method is used to check if a specific string exists in a collection, and returns `true` or `false`. Keep in mind that it is **case sensitive** : if the item inside the collection is `SCHOO`L, and you search for `school`, it will return `false`.
 
 #### Example:
