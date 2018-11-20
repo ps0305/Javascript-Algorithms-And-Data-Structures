@@ -30,3 +30,13 @@ console.log(language) }
 //Rust
 //Go
 ```
+
+### Includes Methods
+The `includes()` method is used to check if a specific string exists in a collection, and returns `true` or `false`. Keep in mind that it is **case sensitive** : if the item inside the collection is `SCHOO`L, and you search for `school`, it will return `false`.
+
+#### Example:
+```js
+const car = ['MARUTI', 'HONDA', `SUZUKI`];
+const findCar = car.includes('HONDA');
+console.log(findCar);
+//true
