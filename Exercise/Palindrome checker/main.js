@@ -10,8 +10,8 @@ function isPalindrome(str) {
 
 console.log(isPalindrome("racecar"));
 
-/*
-2. With a for loop and straight forward regex
+
+//2. With a for loop and straight forward regex
 
 function isPalindrome(str) {
   var regex = /[^A-Za-z0-9]/g;
@@ -24,4 +24,3 @@ function isPalindrome(str) {
   }
   return true;
  }
-*/
