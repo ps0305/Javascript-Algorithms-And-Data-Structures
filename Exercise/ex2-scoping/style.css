@@ -1,0 +1,60 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#work-entry-form,
+#work-entry-form input,
+#work-entry-form select,
+#work-entry-form button {
+	font-size: 20px;
+}
+
+.project-entry,
+.project-entry > .work-time,
+.total-work-time {
+	display: none;
+}
+
+.project-entry.visible {
+	display: inline-block;
+}
+
+.project-entry {
+	position: relative;
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid gray;
+	vertical-align: top;
+	max-width: 350px;
+	font-size: 19px;
+}
+
+.project-entry > .work-time {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.project-entry > .work-entries {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.project-entry > .work-entries > .work-entry {
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.project-entry > .work-entries > .work-entry:first-child {
+	margin-top: 0px;
+}
+
+.project-entry > .work-entries > .work-entry > .work-time {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+	width: 60px;
+	text-align: right;
+}

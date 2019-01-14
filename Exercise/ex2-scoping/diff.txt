@@ -1,0 +1,25 @@
+	var handleClick = function(){								   |		{ let handleClick;
+												   >			handleClick = function submitNewWorkEntry(){
+												   >	}
+	if (description.length < 5) return false;						   |		if (description.length < minWorkDescriptionLength) return false;
+		minutes > 600									   |			minutes > maxWorkTime
+	var projectId = Math.round(Math.random()*1E4);						   |		var projectEntryData;
+	var projectEntryData = { id: projectId, description: description, work: [], time: 0 };	   |
+												   >		{ let projectId;
+												   >			projectId = Math.round(Math.random()*1E4);
+												   >			projectEntryData = { id: projectId, description: description, work: [], time: 0 
+												   >		}
+	for (var i = 0; i < projects.length; i++) {						   |		for (let i = 0; i < projects.length; i++) {
+		projectEntryData.work = projectEntryData.work.slice().sort(function(a,b){	   |			projectEntryData.work = projectEntryData.work.slice().sort(function sortTimeDesc
+												   >			{ let entryIdx;
+		for (var entryIdx = 0; entryIdx < projectEntryData.work.length; entryIdx++) {	   |				for (let i = 0; i < projectEntryData.work.length; i++) {
+			if (projectEntryData.work[entryIdx] === workEntryData) {		   |					if (projectEntryData.work[i] === workEntryData) {
+												   >						entryIdx = i;
+												   >		}
+	if (description.length > 20) {								   |		if (description.length > maxVisibleWorkDescriptionLength) {
+		description = `${description.substr(0,20)}...`;					   |			description = `${description.substr(0,maxVisibleWorkDescriptionLength)}...`;
+var projectTemplate = "<div class='project-entry'><h3 class='project-description' rel='js-projec   |	const projectTemplate = "<div class='project-entry'><h3 class='project-description' rel='js-proj
+var workEntryTemplate = "<li class='work-entry'><span class='work-time' rel='js-work-time'></spa   |	const workEntryTemplate = "<li class='work-entry'><span class='work-time' rel='js-work-time'></s
+												   >	const maxVisibleWorkDescriptionLength = 20;
+												   >	const minWorkDescriptionLength = 5;
+												   >	const maxWorkTime = 600;
