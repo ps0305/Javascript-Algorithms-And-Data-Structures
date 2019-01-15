@@ -1,10 +1,10 @@
-/*One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.
-
-A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.
-
+/*One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. 
+In a shift cipher the meanings of the letters are shifted by some set amount.
+A common modern use is the ROT13 cipher, 
+where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.
 Write a function which takes a ROT13 encoded string as input and returns a decoded string.
-
-All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.*/
+All letters will be uppercase. 
+Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.*/
 
 //Basic Code Solution:
 function rot13(str) {
@@ -26,7 +26,6 @@ function rot13(str) {
       return String.fromCharCode(x - 13);
     }).join('');  // Rejoin the array into a string
 }
-
 
 //Intermediate Code Solution:
 // Solution with Regular expression and Array of ASCII character codes
