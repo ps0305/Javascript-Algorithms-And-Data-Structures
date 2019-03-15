@@ -24,3 +24,35 @@ It's another divide-and-conquer, recursive algorithm but it takes a slightly dif
 ```
 
 Another Big O of O(n log n) but takes up less memory than mergesort so it is often favored. However it does really poorly if you pass it a sorted list. Think about it. It would always have a pivot of the biggest number which defeats the effectiveness of the divide-and-conquer approach as one side will always contain all the elements. Hence not good for lists you expect may already be sorted. There are some tricks to employ to get around that like checking the beginning, middle, and end numbers and swapping them to try to get the best pivot, but that's outside our scope today. There are a lot of subtle variants on quicksort.
+
+```js
+const quickSort = nums => {
+  if (nums.length <= 1) return nums;
+  
+  const pivot = nums[nums.length-1];
+  const left = [];
+  const right = [];
+  
+  for (let i = 0; i < nums.length-1; i++) {
+    if (nums[i] < pivot) {
+      left.push(nums[i]);
+    }
+    else {
+      right.push(nums[i]);
+    }
+  }
+  return [...quickSort(left), pivot, ...quickSort(right)];
+};
+
+
+// unit tests
+// do not modify the below code
+describe('quickSort', function() {
+  it('quicksort an array', () => {
+    const input = [10, 8, 2, 1, 6, 3, 9, 4, 7, 5];
+    const answer = quickSort(input);
+    
+    expect(answer).toEqual([1,2,3,4,5,6,7,8,9,10]);
+
+  });
+});
