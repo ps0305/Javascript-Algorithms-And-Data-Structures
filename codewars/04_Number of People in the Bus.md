@@ -18,3 +18,7 @@ var number = function(busStops){
   }
   return people;
 }
+
+-------------------------------------------
+//with reduce 
+const number = (busStops) => busStops.reduce((people, [onboarded, offboarded]) => people + onboarded - offboarded, 0);
