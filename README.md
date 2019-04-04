@@ -1,20 +1,6 @@
 ## JavaScript is ...
 a `dynamic`, `weakly typed`, `prototype-based` language with `first-class functions`.
 
-## Planning
-https://img.shields.io/endpoint.svg?label=JS&logo=Javascript&style=popout-square
-
-[Basic JavaScript](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20JavaScript) 
-[ES6](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/ES6)
-Debugging[Debugging](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Debugging)
-Algorithms Scripting [Algorithms Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting)
-Object oriented Programming [Object oriented Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Object%20Oriented%20Programming)
-Functional Programming [Functional Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Functional%20Programming)
-Intermediate Algorithm Scripting[Intermediate Algorithm Scripting](#)
-
-
-
-
 ## JS is Dynamic
 ```js
 //Compilation and execution happen together.
@@ -65,4 +51,19 @@ value = bigF(2); // 16
 
 
 JavaScript (JS) is a lightweight, interpreted or `JIT compiled programming language` with `first-class functions`. Most well-known as the scripting language for Web pages, `many non-browser environments` also use it, such as `node.js` and Apache `CouchDB`. JS is a `prototype-based`, multi-paradigm, dynamic scripting language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. 
+
+
+[Basic JavaScript](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20JavaScript)
+
+[ES6](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/ES6)
+
+[Debugging](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Debugging)
+
+[Algorithms Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting)
+
+[Object oriented Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Object%20Oriented%20Programming)
+
+[Functional Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Functional%20Programming)
+Intermediate Algorithm Scripting[Intermediate Algorithm Scripting]
+
 
