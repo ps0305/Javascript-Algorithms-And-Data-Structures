@@ -2,15 +2,15 @@
 a `dynamic`, `weakly typed`, `prototype-based` language with `first-class functions`.
 
 ## Planning
-| Sr.No. | Topic | Read | 
-| ---- | ----- | ---- | 
-| 1. | Basic JavaScript | [Basic JavaScript](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20JavaScript) 
-| 2. | ES6 | [ES6](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/ES6) | 
-| 3. | Debugging | [Debugging](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Debugging) |
-| 4. | Algorithms Scripting | [Algorithms Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting) |
-| 5. | Object oriented Programming | [Object oriented Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Object%20Oriented%20Programming) |
-| 6. | Functional Programming | [Functional Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Functional%20Programming) | 
-| 7. | Intermediate Algorithm Scripting| [Intermediate Algorithm Scripting](#) |
+https://img.shields.io/endpoint.svg?label=JS&logo=Javascript&style=popout-square
+
+[Basic JavaScript](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20JavaScript) 
+[ES6](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/ES6)
+Debugging[Debugging](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Debugging)
+Algorithms Scripting [Algorithms Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting)
+Object oriented Programming [Object oriented Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Object%20Oriented%20Programming)
+Functional Programming [Functional Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Functional%20Programming)
+Intermediate Algorithm Scripting[Intermediate Algorithm Scripting](#)
 
 
 
