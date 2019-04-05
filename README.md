@@ -57,6 +57,10 @@ JavaScript (JS) is a lightweight, interpreted or `JIT compiled programming langu
 
 [ES6](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/ES6)
 
+[Basic Algorith Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting)
+
+[Basic Structures](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Data%20Structures)
+
 [Debugging](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Debugging)
 
 [Algorithms Scripting](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Basic%20Algorithm%20Scripting)
@@ -64,6 +68,9 @@ JavaScript (JS) is a lightweight, interpreted or `JIT compiled programming langu
 [Object oriented Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Object%20Oriented%20Programming)
 
 [Functional Programming](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Functional%20Programming)
-Intermediate Algorithm Scripting[Intermediate Algorithm Scripting]
+
+[Intermediate Algorithm Scripting](#)
+
+[Important CS Concepts](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Important%20CS%20Concepts)
 
 
