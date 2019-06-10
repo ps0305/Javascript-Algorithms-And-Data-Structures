@@ -22,4 +22,32 @@ function pushZerosToEnd(arr) {
 }
 
 console.log(pushZerosToEnd([0, 1, 2, 0, 3, 0, 5, 6]))
+
+==============================================================
+
+var pushZerosToEnd = function (arr) {
+  return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
+}
+
+=============================================================
+var pushZerosToEnd = function (arr) {
+  return arr
+    .filter((val) => val !== 0)
+    .concat(arr.filter((val) => val === 0));
+}
+
+=============================================================
+var pushZerosToEnd = function (arr) {
+  var result = [];
+
+  for (var i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] === 0) {
+      result.push(arr[i]);
+    } else {
+      result.unshift(arr[i]);
+    }
+  }
+  
+  return result;
+}
 ```
