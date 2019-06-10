@@ -22,21 +22,23 @@ function pushZerosToEnd(arr) {
 }
 
 console.log(pushZerosToEnd([0, 1, 2, 0, 3, 0, 5, 6]))
-
+```
 ==============================================================
-
+```js
 var pushZerosToEnd = function (arr) {
   return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
 }
-
-=============================================================
+```
+==============================================================
+```js
 var pushZerosToEnd = function (arr) {
   return arr
     .filter((val) => val !== 0)
     .concat(arr.filter((val) => val === 0));
 }
-
-=============================================================
+```
+==============================================================
+```js
 var pushZerosToEnd = function (arr) {
   var result = [];
 
