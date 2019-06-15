@@ -59,3 +59,22 @@ console.log(roster);
 What makes this so useful is you don’t have to worry about deleting references to deleted objects in your WeakSets, JavaScript does it for you! When an object is deleted, the object will also be deleted from the WeakSet when garbage collection runs. This makes WeakSets useful in situations where you want an efficient, lightweight solution for creating groups of objects.
 
 The point in time when garbage collection happens depends on a lot of different factors. Check out [MDN’s documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#Garbage_collection) to learn more about the algorithms used to handle garbage collection in JavaScript.
+
+```js
+/*
+ * Programming Quiz:
+ *
+ * Create the following variables:
+ *     - uniqueFlavors and set it to a new WeakSet object
+ *     - flavor1 and set it equal to `{ flavor: 'chocolate' }`
+ *     - flavor2 and set it equal to an object with property 'flavor' and value of your choice!
+ *
+ * Use the `.add()` method to add the objects `flavor1` and `flavor2` to `uniqueFlavors`
+ * Use the `.add()` method to add the `flavor1` object (again!) to the `uniqueFlavors` set
+ */
+const uniqueFlavors = new WeakSet();
+const flavor1 = { flavou: 'chocolate' };
+const flavor2 = flavor1;
+uniqueFlavors.add(flavor1);
+uniqueFlavors.add(flavor2);
+uniqueFlavors.add(flavor1);
