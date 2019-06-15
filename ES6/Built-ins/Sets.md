@@ -138,8 +138,10 @@ brown
 black
 
 
+```js
+
 /*
- * Programming Quiz: Using Sets (3-1)
+ * Programming Quiz
  *
  * Create a Set object and store it in a variable named `myFavoriteFlavors`. Add the following strings to the set:
  *     - chocolate chip
@@ -149,7 +151,7 @@ black
  *
  * Then use the `.delete()` method to remove "strawberry" from the set.
  */
- ```js
+ 
  const myFavoriteFlavors = new Set();
  
  myFavoriteFlavors.add("chocolate chip");
