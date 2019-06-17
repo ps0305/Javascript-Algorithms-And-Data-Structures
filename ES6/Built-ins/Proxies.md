@@ -70,9 +70,9 @@ agent.status; // returns the text `He's following many leads, so you should offe
 ```
 With this code, the Proxy doesn't even check the target object, it just directly responds to the calling code.
 
-So the get trap will take over whenever any property on the proxy is accessed. If we want to intercept calls to change properties, then the set trap needs to be used!
+So the `get` trap will take over whenever any property on the proxy is accessed. If we want to intercept calls to change properties, then the `set` trap needs to be used!
 
-The set trap is used for intercepting code that will change a property. The set trap receives: the object it proxies the property that is being set the new value for the proxy
+The `set` trap is used for intercepting code that will change a property. The `set` trap receives: the object it proxies the property that is being `set` the new value for the proxy
 
 ```js
 const richard = {status: 'looking for work'};
@@ -88,4 +88,4 @@ const agent = new Proxy(richard, handler);
 agent.payRate = 1000; // set the actor's pay to $1,000
 agent.payRate; // $850 the actor's actual pay
 ```
-In the code above, notice that the set trap checks to see if the payRate property is being set. If it is, then the proxy (the agent) takes 15 percent off the top for her own commission! Then, when the actor's pay is set to one thousand dollars, since the payRate property was used, the code took 15% off the top and set the actual payRate property to 850;
+In the code above, notice that the `set` trap checks to see if the payRate property is being set. If it is, then the proxy (the agent) takes 15 percent off the top for her own commission! Then, when the actor's pay is set to one thousand dollars, since the `payRate` property was used, the code took 15% off the top and set the actual `payRate` property to `850`;
