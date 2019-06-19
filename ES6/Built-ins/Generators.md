@@ -58,4 +58,40 @@ getEmployee();
 
 ## Generators & Iterators
 
+When a generator is invoked, it doesn't actually run any of the code inside the function. Instead, it creates and returns an iterator. This iterator can then be used to execute the actual generator's inner code.
+
+```js
+const generatorIterator = getEmployee();
+generatorIterator.next();
+```
+```html
+the function has started
+Amanda
+Diego
+Farrin
+James
+Kagure
+Kavita
+Orit
+Richard
+the function has ended
+```
+Now if you tried the code out for yourself, the first time the iterator's `.next()` method was called it ran all of the code inside the generator. Did you notice anything? The code never paused! So how do we get this magical, pausing functionality?
+
+## The Yield Keyword
+
+```js
+function* getEmployee() {
+    console.log('the function has started');
+
+    const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+
+    for (const name of names) {
+        console.log(name);
+        yield;
+    }
+
+    console.log('the function has ended');
+}
+```
 
