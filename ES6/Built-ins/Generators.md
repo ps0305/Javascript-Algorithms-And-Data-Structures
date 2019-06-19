@@ -50,3 +50,12 @@ function* getEmployee() {
 Notice the asterisk (i.e. *) right after the `function` keyword? That asterisk indicates that this function is actually a generator!
 
 Now check out what happens when we try running this function:
+```js
+getEmployee();
+```
+> // this is the response I get in Chrome:
+> getEmployee {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
+
+## Generators & Iterators
+
+
