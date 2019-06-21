@@ -94,4 +94,21 @@ function* getEmployee() {
     console.log('the function has ended');
 }
 ```
+Notice that there's now a `yield` inside the `for...of` loop. If we invoke the generator (which produces an iterator) and then call `.next()`, we'll get the following output:
+```js
+const generatorIterator = getEmployee();
+generatorIterator.next();
+```
+### Logs the following to the console:
+
+```
+the function has started
+Amanda
+```
+It's paused! But to really be sure, let's check out the next iteration:
+```js
+generatorIterator.next();
+```
+### Logs the following to the console:
+
 
