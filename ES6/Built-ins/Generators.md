@@ -110,5 +110,7 @@ It's paused! But to really be sure, let's check out the next iteration:
 generatorIterator.next();
 ```
 ### Logs the following to the console:
+> Diego
+So it remembered exactly where we left off! It took the next item in the array (Diego), logged it, and then hit the `yield` again, so it paused again.
 
-
+Now pausing is all well and good, but what if we could send data from the generator back to the "outside" world? We can do this with `yield`.
