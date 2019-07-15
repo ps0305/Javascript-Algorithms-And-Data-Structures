@@ -12,6 +12,20 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
+console.log(--------------------------------------------------------);
+
+function findLongestWordLength(str) {
+  let arrStr =  str.split(' ');
+  let longWord = 0;
+  for ( let item of arrStr) {
+    if(item.length > longWord) {
+      longWord = item.length;
+    }
+  }
+  return longWord
+}
+
+findLongestWordLength("What if we try a super-long word such as otorhinolaryngology");
 ```
 
 * Intermediate Code Solution
