@@ -4,10 +4,23 @@ In other words, return the symmetric difference of the two arrays.
 
 ```js
 function diffArray(arr1, arr2) {
+  var newArr = [];
+  function compareTwo(first, second) {
+      for (let i = 0; i < first.length; i++) {
+        if(second.indexOf(first[i]) == -1) {
+          newArr.push(first[i]);
+        }
+  }
+}
+  compareTwo(arr1,arr2);
+  compareTwo(arr2,arr1);
+
+  return newArr;
+  }
   
 }
 ```
-
+* with ES6
 
 ```js
 function diffArray(arr1, arr2) {
