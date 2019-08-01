@@ -16,3 +16,16 @@ function sumAll(arr) {
 
 sumAll([1, 4]);
 ````
+
+Another Approach
+
+```js
+function sumAll(arr) {
+    var sum = 0;
+    for (var i = Math.min(...arr); i <= Math.max(...arr); i++){
+        sum += i;
+    }
+  return sum;
+}
+
+sumAll([10, 5]);
