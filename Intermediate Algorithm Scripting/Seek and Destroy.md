@@ -37,7 +37,7 @@ function destroyer(arr) {
   }
   return arr.filter(Boolean);
 }
-```js
+```
 
 * ES6
 
