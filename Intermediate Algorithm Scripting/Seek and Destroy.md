@@ -43,7 +43,7 @@ function destroyer(arr) {
 
 ```js
 function destroyer(arr) {
-  var args = Array.from(arguments).slice(1);
+  let args = [...Array.from(arguments)];
   return arr.filter(function(val) {
     return !args.includes(val);
   });
