@@ -1,3 +1,5 @@
+## [Computer science in JavaScript: Linked list](https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/)
+
 For our second data structure, we're going to implement a LinkedList. 
 LinkedList is made of a bunch of nodes that point to the next one in the list. 
 Every node in a LinkedLists has two properties, the value of whatever is being store and a pointer to the next node in the list.
