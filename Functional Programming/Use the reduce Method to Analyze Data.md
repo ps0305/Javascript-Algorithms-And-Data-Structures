@@ -136,3 +136,15 @@ var averageRating = watchList.filter(movie => movie.Director == "Christopher Nol
 
 
 console.log(averageRating); 
+
+
+console.log(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+
+let movieCount = 0;
+let averageRating = watchList.reduce((accumulator, current) => {
+  if(current.Director === "Christopher Nolan") {
+    accumulator += +current.imdbRating;
+    movieCount++;
+  }
+  return accumulator
+},0)/movieCount
