@@ -2,7 +2,7 @@ Find the missing letter in the passed letter range and return it.
 
 If all letters are present in the range, return undefined.
 
-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String](String GLobal Object)
+[String Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 ```js
