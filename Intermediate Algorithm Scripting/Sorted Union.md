@@ -21,13 +21,12 @@ function uniteUnique(arr) {
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 ```
 
-* Using Concat, Set and ES6 Spread operator
+* Using Concat, Set and ES6 Spread and Rest parameter
 
 ```js
 function uniteUnique(...arr) {
   let flatArr = [].concat(...arr);
-  let unique = [...new Set(flatArr)]
-  return unique;
+  return [...new Set(flatArr)];
 }
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
