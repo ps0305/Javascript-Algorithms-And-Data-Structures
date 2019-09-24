@@ -24,7 +24,7 @@ function palindrome(str) {
 
 
 palindrome("eye");
-```js
+```
 
 * [ and ] are the start and end of a character set.
 * \W means "non-word", as opposed to \w which will match a word.
