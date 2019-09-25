@@ -1,3 +1,5 @@
+[codeburst.io](https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
+
 ES6 introduces the spread operator, 
 which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.
 
