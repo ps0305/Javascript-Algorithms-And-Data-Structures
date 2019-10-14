@@ -57,3 +57,15 @@ var i = 0, j = setInterval(function () {
   if (i === 100) { clearInterval(j) } 
 }, 100);
 ```
+#### Count the occurrence of each word in a phrase using javascript
+
+```js
+function count(str){
+  var obj={};
+  str.toLowerCase().split("").forEach(function(el,i,arr){
+    obj[el] = obj[el] ? ++obj[el] : 1;
+  });
+  return obj;
+}
+console.log(count("Hello Wworld"));
+```
