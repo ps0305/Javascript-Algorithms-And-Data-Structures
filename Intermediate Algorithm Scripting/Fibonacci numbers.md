@@ -46,3 +46,13 @@ function fibonacci(num, memo) {
   return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
 }
 ```
+
+## Print Fibonacci Series
+
+```js
+function fibonacci(n) {
+if(n <= 1) return [0,1]
+let fib = fibonacci(n - 1)
+fib.push(fib[fib.length - 1] + fib[fib.length - 2])
+return fib;
+}
