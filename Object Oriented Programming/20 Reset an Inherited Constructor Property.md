@@ -1,7 +1,7 @@
-/*When an object inherits its prototype from another object, it also inherits the supertype's constructor property.
+When an object inherits its prototype from another object, it also inherits the supertype's constructor property.
 
 Here's an example:
-
+```js
 function Bird() { }
 Bird.prototype = Object.create(Animal.prototype);
 let duck = new Bird();
@@ -10,9 +10,9 @@ But duck and all instances of Bird should show that they were constructed by Bir
 
 Bird.prototype.constructor = Bird;
 duck.constructor // function Bird(){...}
-
-Fix the code so duck.constructor and beagle.constructor return their respective constructors.*/
-
+```
+Fix the code so `duck.constructor` and `beagle.constructor` return their respective `constructors`.
+```js
 function Animal() { }
 function Bird() { }
 function Dog() { }
