@@ -148,3 +148,18 @@ let averageRating = watchList.reduce((accumulator, current) => {
   }
   return accumulator
 },0)/movieCount
+
+========================
+
+function getRating(watchList){
+  // Only change code below this line
+ // Only change code below this line
+ let movieCount = 0
+  var averageRating = watchList.filter(fItem => fItem.Director === 'Christopher Nolan').reduce((acc, curr) => {
+    let total = acc + Number(curr.imdbRating)
+    movieCount++;
+    return total
+  }, 0)
+  // Only change code above this lin
+  return averageRating / movieCount;
+}
