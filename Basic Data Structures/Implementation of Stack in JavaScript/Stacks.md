@@ -77,7 +77,7 @@ isEmpty() {
 ### Here is our finalized stack code.
 
 ```js
-class Stack {
+export default class Stack {
   constructor() {
     this.stack = [];
   }
@@ -99,7 +99,7 @@ class Stack {
   }
 
   isEmpty () {
-    return this.stack === 0;
+    return this.length === 0;
   }
 }
 ```
