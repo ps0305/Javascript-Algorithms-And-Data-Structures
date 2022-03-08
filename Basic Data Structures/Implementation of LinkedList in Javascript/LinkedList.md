@@ -38,24 +38,109 @@ Now we can create our Linked List class. The constructor will keep track of thre
 * length : The number of nodes in the list
 
 ```js
-class LinkedList {
-  constructor() {
-  this.head = null
-  this.tail = null
-  this.length = 0
+class Node {
+  // while creating a node, we'll pass the value to the constructor and inititialize the pointer with null
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
 }
-```
 
-push(value) {
-  const newNode = new Node(value);
-  if (this.isEmpty()) {
-  this.head = newNode;
-  this.tail = newNode;
-  } else {
-  this.tail.next = newNode;
-  this.tail = newNode;
+class LinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
   }
-this.push
+
+  isEmpty() {
+    return this.length === 0;
+  }
+
+  // Adding Nodes to Linked Lists
+  // we have two scenarios
+
+  // the List is empty
+  push(value) {
+    const newNode = new Node(value);
+    if (this.isEmpty()) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      // the List has at least one node
+
+      // If the list is not empty we have to first set the current tail node’s pointer to the new node.
+      // Then we can set `this.tail` to the new node and increment the list length
+      this.tail.next = newNode;
+      this.tail = newNode;
+    }
+    this.length++;
+  }
+
+
+  // Removing Nodes to Linked Lists
+  // the list is empty
+
+  pop() {
+    if (this.isEmpty()) {
+      return null;
+    } else if (this.length === 1) {
+      /* There is one node in the list */
+      const nodeToRemove = this.head;
+      this.head = null;
+      this.tail = null;
+      this.length--;
+
+      return nodeToRemove;
+    } else {
+      /* There are multiple nodes in the list */
+
+      // Start our pointer at the head
+      let currentNode = this.head;
+      // We're removing the last node in the list
+      let nodeToRemove = this.tail;
+      // This will be our new tail
+      let secondToLastNode;
+      while (currentNode) {
+        if (currentNode.next === this.tail) {
+          secondToLastNode = currentNode;
+          break;
+        }
+        currentNode = currentNode.next;
+      }
+      secondToLastNode.next = null;
+      this.tail = secondToLastNode;
+      this.length--;
+
+      return nodeToRemove;
+    }
+  }
+
+  // Getting nodes from Linked List
+  get(index) {
+    if (index < 0 || index > this.length || this.isEmpty()) {
+      return null;
+    }
+    /* We want the first node */
+    if (index === 0) {
+      return this.head;
+    }
+    //  we want the last node
+    if (index === this.length - 1) {
+      return this.tail;
+    }
+
+    // we want a node somewhere in the list
+    let currentNode = this.head;
+    let iterator = 0;
+    while (iterator < index) {
+      iterator++;
+      currentNode = currentNode.next;
+    }
+  
+    return currentNode;
+  }
+
+}
 
 
