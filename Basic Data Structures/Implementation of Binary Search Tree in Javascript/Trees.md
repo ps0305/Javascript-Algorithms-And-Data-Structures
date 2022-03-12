@@ -17,6 +17,8 @@ Binary trees are a special type of tree in which each node can only have a maxim
 
 ##  Binary Search Tree
 
+> A Binary Search tree is a binary tree in which nodes that have lesser value are stored on the left while the nodes with a higher value are stored at the right.
+
 ```js
 // Node class
 class Node
@@ -119,3 +121,93 @@ insertNode(node, newNode)
 	}
 }
 ```
+
+In the above code we have two methods insert(data) and insertNode(node, newNode). Let’s understand them one by one:- 
+
+* **insert(data)** – It creates a new node with a value data, if the tree is empty it add this node to a tree and make it a root, otherwise it calls insert(node, data).
+* **insert(node, data)** – It compares the given data with the data of the current node and moves left or right accordingly and recur until it finds a correct node with a null value where new node can be added.
+
+**2.remove(data)** – This function removes a node with a given data.
+
+```js
+// helper method that calls the
+// removeNode with a given data
+remove(data)
+{
+	// root is re-initialized with
+	// root of a modified tree.
+	this.root = this.removeNode(this.root, data);
+}
+
+// Method to remove node with a
+// given data
+// it recur over the tree to find the
+// data and removes it
+removeNode(node, key)
+{
+		
+	// if the root is null then tree is
+	// empty
+	if(node === null)
+		return null;
+
+	// if data to be delete is less than
+	// roots data then move to left subtree
+	else if(key < node.data)
+	{
+		node.left = this.removeNode(node.left, key);
+		return node;
+	}
+
+	// if data to be delete is greater than
+	// roots data then move to right subtree
+	else if(key > node.data)
+	{
+		node.right = this.removeNode(node.right, key);
+		return node;
+	}
+
+	// if data is similar to the root's data
+	// then delete this node
+	else
+	{
+		// deleting node with no children
+		if(node.left === null && node.right === null)
+		{
+			node = null;
+			return node;
+		}
+
+		// deleting node with one children
+		if(node.left === null)
+		{
+			node = node.right;
+			return node;
+		}
+		
+		else if(node.right === null)
+		{
+			node = node.left;
+			return node;
+		}
+
+		// Deleting node with two children
+		// minimum node of the right subtree
+		// is stored in aux
+		var aux = this.findMinNode(node.right);
+		node.data = aux.data;
+
+		node.right = this.removeNode(node.right, aux.data);
+		return node;
+	}
+
+}
+```
+
+In the above code we have two methods remove(data) and removeNode(node, data), let understand them one by one: 
+
+* **remove(data)** – It is helper methods which call removeNode by passing root node and given data and updates the root of the tree with the value returned by the function
+* **removeNode(node, data)** – It searches for a node with a given data and then perform certain steps to delete it.
+* **Deleting the leaf node** – As leaf node does not have any children, hence they can be easily removed and null is returned to the parent node
+* **Deleting a node with one child** – If a node has a left child, then we update the pointer of the parent node to the left child of the node to be deleted and similarly, if a node have a right child then we update the pointer of the parent node to the right child of the node to be deleted
+* **Deleting a node with two children** – In order to delete a node with two children we find the node with minimum value in its right subtree and replace this node with the minimum valued node and remove the minimum valued node from the tree
