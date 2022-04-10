@@ -123,3 +123,7 @@ class Stack {
     return this.reverse ? this.stack.shift() : this.stack.pop();
   }
 }
+
+```
+
+> **As the number of items grows, push/pop becomes increasingly more performant than unshift/shift because every item needs to be reindexed in the latter but not the former.
