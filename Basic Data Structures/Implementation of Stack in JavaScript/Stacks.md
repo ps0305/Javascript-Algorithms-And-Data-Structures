@@ -103,3 +103,23 @@ export default class Stack {
   }
 }
 ```
+
+> Notice that we can reverse the order of the stack: the bottom becomes the top and the top becomes the bottom. As such, we can use the array’s unshift and shift methods in place of push and pop, respectively.
+
+```js
+class Stack {
+  constructor(...items) {
+    this.reverse = false;
+    this.stack = [...items];
+  }
+
+  push(...items) {
+    return this.reverse
+      ? this.stack.unshift(...items)
+      : this.stack.push(...items);
+  }
+
+  pop() {
+    return this.reverse ? this.stack.shift() : this.stack.pop();
+  }
+}
