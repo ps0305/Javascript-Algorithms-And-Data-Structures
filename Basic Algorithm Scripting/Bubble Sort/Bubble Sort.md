@@ -47,13 +47,13 @@ function bubbleSortWithForLoops(arr) {
   for (var i = 0; i < arr.length; i++) {
       // Notice that j < (length - i)
       for (var j = 0; j < arr.length - i - 1; j++) {
-      // Compare the adjacent positions
-      if (arr[j] > arr[j + 1]) {
-      // Swap the numbers
-      // Temporary variable to hold the current number
-      var tmp = arr[j]
-      // Replace current number with adjacent number
-      arr[j] = arr[j + 1]
+        // Compare the adjacent positions
+        if (arr[j] > arr[j + 1]) {
+        // Swap the numbers
+        // Temporary variable to hold the current number
+        var tmp = arr[j]
+        // Replace current number with adjacent number
+        arr[j] = arr[j + 1]
       // Replace adjacent number with current number
       arr[j + 1] = tmp
       }
@@ -70,12 +70,12 @@ function bubbbleSort(arr) {
     do {
     swapped = false
     arr.forEach((item, index) => {
-    if (item > arrr[index + 1]) {
-    let temp = item
-    arr[index] = arr[index + 1]
-    arr[index + 1] = temp
-    swapped = true
-    }
+      if (item > arr[index + 1]) {
+        let temp = item
+        arr[index] = arr[index + 1]
+        arr[index + 1] = temp
+      swapped = true
+      }
     })
   } while (swapped)
     return arr
