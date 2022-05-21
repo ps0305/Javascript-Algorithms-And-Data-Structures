@@ -37,8 +37,7 @@ Array.prototype.reduceAlbums = function(callback, initialValue) {
 } // our polyfill for reduce
 
 // bind
-
-```js
+// https://dev.to/uddeshjain/creating-your-own-bind-polyfill-of-bind-433j
 let obj = {
   name: 'Jack',
 };
@@ -58,4 +57,3 @@ Function.prototype.myBind = function (obj, ...args) {
 
 let newFunc = myFunc.myBind(obj, 'a_random_id')
 newFunc('New York') // Jack, a_random_id, New York
-```
