@@ -71,4 +71,10 @@ JavaScript (JS) is a lightweight, interpreted or `JIT compiled programming langu
 
 [HackerRank](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/HackerRank-10-Days-Of-JavaScript-Solutions)
 
+[Coding Interview Prep](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Coding%20Interview%20Prep)
+
+[Blind 75 LeetCode](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/blob/master/Coding%20Interview%20Prep/Blind%2075%20LeetCode.md)
+
+[Projects](https://github.com/ps0305/Javascript-Algorithms-And-Data-Structures/tree/master/Projects)
+
 
