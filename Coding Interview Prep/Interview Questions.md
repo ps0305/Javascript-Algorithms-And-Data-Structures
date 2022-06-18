@@ -1,3 +1,7 @@
+* Tell me some of the APIs introduced in HTML5.
+* Ways to store data on the client-side i.e. inside browsers.
+* Session Storage vs Local Storage.
+* CSS combinators. Child vs Descendant Selectors.
 * What is `hoisting` in JavaScript?
 * How `let` and `const` have affected the concept of hoisting.
 
@@ -39,3 +43,8 @@
 * GraphQL vs Rest.
 * Client-side vs Server-side rendering.
 * tell about some ways to optimise a web application?
+* How does the event loop work?
+* What about getDerivedStateFromProps and getSnapshotBeforeUpdate methods?
+* How to achieve exact behavior like componentDidUpdate in functional components?
+* What is debouncing and throttling? Differences between them.
+* Code debouncing.
