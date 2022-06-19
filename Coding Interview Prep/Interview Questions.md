@@ -47,4 +47,43 @@
 * What about getDerivedStateFromProps and getSnapshotBeforeUpdate methods?
 * How to achieve exact behavior like componentDidUpdate in functional components?
 * What is debouncing and throttling? Differences between them.
+
+## What is a debounce function?
+
+Debounce function limits the execution of a function call and waits for a certain amount of time before running it again.
+
+```js
+const debounceFunc = (func, delay) => {
+   let timer;
+    return function(...args) {
+       const context = this;
+       clearTimeOut(timer);
+       timer = setTimeOut(() => {
+           func.apply(context, args);
+       }, delay)
+     }}
+```
+![image](https://user-images.githubusercontent.com/34129569/174491820-d030e948-5f18-4b34-b542-29ac59394d9e.png)
+
+## What is throttle function?
+
+Throttling is a technique, to limit the execution of an event handler function, even when this event triggers continuously due to user actions. (ex: browser resizing)
+
+```js
+const throttleFunc = (func, interval) => {
+     let shouldFire = true;
+   return function() {
+         if (shouldFire) {
+             func();
+             shouldFire = false;
+             setTimeOut(() => {
+               shouldFire = true;
+              }, interval)
+            }
+       }
+  }
+```
+
+![image](https://user-images.githubusercontent.com/34129569/174491911-a739956b-d882-486c-95fe-51066bad4a0c.png)
+
 * Code debouncing.
