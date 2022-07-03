@@ -69,3 +69,23 @@ function pairElement(str) {
 
 // test here
 pairElement("GCG");
+
+
+console.log(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+
+Also, there is another way to solve this  problem:
+function pairElement(str) {
+  return str.split('').map((element) => 
+  (element === "A")
+   ? [element, "T"]
+   : (element === "T")
+      ? [element, "A"]
+      : (element === "G")
+          ? [element, "C"]
+          : (element === "C")
+              ? [element, "G"]
+              : false);
+  
+}
+// test here
+pairElement("GCG");
