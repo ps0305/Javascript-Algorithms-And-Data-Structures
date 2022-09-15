@@ -63,3 +63,24 @@ functionn flatMap(array, callback) {
   return flattened;
 }
 ```
+
+### How would you flatten an array which goes to 'N' levels of nesting.
+
+> Input: [1,2,[3,4,[5,6,[7,[8,9]]]]]
+
+> Expected Output: [1,2,3,4,5,6,7,8]
+
+```js
+let arr = [1,2,[3,4,[5,6,[7,[8,9]]]]];
+
+function flatten(arr) {
+    const flattenedArr = arr.reduce((acc, rItem) => {
+        if (Array.isArray(rItem)) {
+            acc = acc.concat(flatten(rItem));
+        } else {
+            acc.push(rItem);
+        }
+        return acc;
+    }, [])
+    return flattenedArr
+}
