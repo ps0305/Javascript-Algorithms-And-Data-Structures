@@ -1,3 +1,5 @@
+* [faang-frontend-preparation-plan](https://makushev.com/2020/12/14/faang-frontend-preparation-plan/)
+
 * Tell me some of the APIs introduced in HTML5.
 * Ways to store data on the client-side i.e. inside browsers.
 * Session Storage vs Local Storage.
