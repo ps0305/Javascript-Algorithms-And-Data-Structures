@@ -1,4 +1,22 @@
+
 * [faang-frontend-preparation-plan](https://makushev.com/2020/12/14/faang-frontend-preparation-plan/)
+
+* Some of the best resources to learn and advance in javascript...
+
+   1. Javascript - Basics - https://lnkd.in/dNJPGhdE
+
+   2. Javascript and DOM - Intermediate - https://javascript.info/
+
+   3. Javascript - Advanced - https://lnkd.in/dhbihk7t
+
+   4. Critical rendering path - Advanced - https://lnkd.in/gAiQ93yx
+
+   5. Javascript - Advanced - https://lnkd.in/gpkCuZcA
+
+   6. Machine coding - Advanced - https://shorturl.at/iovAU
+
+   7. Browser Rendering- Advanced - https://lnkd.in/gSHQxgvQ
+
 
 * Tell me some of the APIs introduced in HTML5.
 * Ways to store data on the client-side i.e. inside browsers.
