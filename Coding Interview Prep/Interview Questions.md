@@ -146,3 +146,36 @@ const throttleFunc = (func, interval) => {
 * Critical Rendering Path Optimization
 * Cross-Site Request Forgery Protection
 * Differential Loading for Modern Browsers
+
+
+## 12 Resources to crack your next Machine Coding Round for any Frontend-developer job: 
+
+1. Poll - https://lnkd.in/gWEwX8fS
+
+2. Accordion - https://lnkd.in/gbEmEg2G
+
+3. Intersection Observer - https://lnkd.in/gkvWaZC4
+
+4. Tabs - https://lnkd.in/grACKGE8
+
+5. Debounce - https://lnkd.in/giwjJhZD
+
+6. Tic Tac Toe - https://lnkd.in/gxWwGQBN
+
+7. Date Picker - https://lnkd.in/gBNpfp7P
+
+8. Popup - https://lnkd.in/g3fa7bAK
+
+9. Connect 4 - https://lnkd.in/gHWa5t-U
+
+10. Quiz App - https://lnkd.in/gNKAX_FY
+
+11. Calendar - https://lnkd.in/gV-APsMB
+
+12. EventEmitter - https://lnkd.in/gRQndkZU
+
+13. Image Carousel - https://lnkd.in/gwGxRkMW
+
+14. Search Bar - https://lnkd.in/g2GraQFf
+
+15. Card Slider - https://lnkd.in/gxZj2u2t
