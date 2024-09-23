@@ -207,3 +207,56 @@ const throttleFunc = (func, interval) => {
 * Implement the Promise.all function
 * Flatten a nested JavaScript array without using Array.prototype.flat()
 * Implement a custom Sort() function
+
+* To find the **longest substring without repeating characters**, you can use a **sliding window** approach with two pointers (left and right) to track the current window, and a hash map to store the index of the characters.
+
+Here is the solution in JavaScript:
+
+```javascript
+function lengthOfLongestSubstring(s) {
+  let seen = new Map();  // Hash map to store the last index of each character
+  let maxLength = 0;
+  let left = 0;          // Left pointer for the sliding window
+  
+  for (let right = 0; right < s.length; right++) {
+    const currentChar = s[right];
+    
+    // If the character is already in the map and its index is greater than or equal to left, update left
+    if (seen.has(currentChar) && seen.get(currentChar) >= left) {
+      left = seen.get(currentChar) + 1;
+    }
+    
+    // Update or add the current character's index in the map
+    seen.set(currentChar, right);
+    
+    // Calculate the maximum length of substring so far
+    maxLength = Math.max(maxLength, right - left + 1);
+  }
+  
+  return maxLength;
+}
+```
+
+### Example Usage:
+
+```javascript
+console.log(lengthOfLongestSubstring("abcabcbb"));  // Output: 3 ("abc")
+console.log(lengthOfLongestSubstring("bbbbb"));     // Output: 1 ("b")
+console.log(lengthOfLongestSubstring("pwwkew"));    // Output: 3 ("wke")
+console.log(lengthOfLongestSubstring(""));          // Output: 0
+```
+
+### Explanation:
+1. **Sliding Window**: 
+   - Use two pointers (`left` and `right`) to maintain the current window of characters.
+   - As you move `right` through the string, check if the current character is already in the map and its last index is within the window (i.e., greater than or equal to `left`).
+   
+2. **Updating Window**:
+   - If a repeating character is found, move the `left` pointer just after the previous occurrence of that character.
+   - Store or update the index of each character in the hash map (`seen`).
+
+3. **Calculate Length**:
+   - For each new character, update the maximum length of the substring if the current window is longer.
+
+### Time Complexity:
+- **O(n)** where `n` is the length of the string. Each character is processed at most twice (once when the right pointer moves and once when the left pointer moves).
