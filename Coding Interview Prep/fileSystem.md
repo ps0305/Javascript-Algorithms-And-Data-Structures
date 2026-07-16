@@ -55,7 +55,8 @@ export default function App() {
       <FileExplorerItem node={fileSystem} />
     </div>
   );
-}```
+}
+```
 
 ### Key Technical Considerations
 * Recursive Components: The FileExplorerItem component calls itself if the node isFolder is true. This is the standard way to handle trees of arbitrary depth.
